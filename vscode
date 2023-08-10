@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vscode shortkey vowel</title>
+</head>
+
+<body>
+    <h1 style="color: rgb(82, 238, 238);">
+        <a href="https://inpa.tistory.com/entry/VS-Code-%E2%8F%B1%EF%B8%8F-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%A0%95%EB%A6%AC#html_%EC%B4%88%EA%B8%B0_%ED%83%9C%EA%B7%B8_%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1"
+            target="_blank">vscode core shortkey vowel</a>
+    </h1>
+    <ul>
+        <input type="checkbox">습득유무</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wn7j5dfbJF4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <p style="color: rgb(76, 11, 206);">-----------------------------------------------------------------------------------------</p>
+    
+        <!-- 실시간인지 테스트 실 시 간 되는군...ㅋ박수 -->
+        <li>ctrl+k+f 선택부분 자동 들여쓰기 및 스타일 포멧 (많이 쓰는 플러그인)</li>
+        <li>ctrl+b 사이드바 여닫기</li>
+        <li>alt+ 방향키 위 아래 한단씩 이동</li>
+        <li>shift+alt 방향키 위아래 한단 복사</li>
+        <li>ctrl+x 한 단 삭제 </li>
+        <li>ctrl + w 탭 닫기</li>
+        </p>
+    
+        <li>alt+커서 멀티 커서</li>
+        <li>ctrl+alt+up/down 세로 다중 커서 </li>
+        <li>ctrl+shift+i 선택 줄 끝에 커서 </li>
+        </p>
+    
+        <li>ctrl+d 같은 단어 밑으로 선택 </li>
+        <li>ctrl+shift+l 같은 단어 전체 선택 </li>
+        <li>ctrl+h 모든 단어 바꾸기</li>
+        </p>
+    
+        <li>ctrl+f 텍스트 찾기 </li>
+        <li>ctrl+p 이름으로 파일 검색</li>
+        <li>ctrl + shift + p 모든 명령 검색</li>
+        </p>
+    
+        <li>ctrl + z 되돌리기</li>
+        <li>ctrl + y 돌아오기</li>
+        <li>tab 들여쓰기</li>
+        <li>shift + tab 내어쓰기</li>
+        <li>ctrl + 숫자 : 창 나누기</li>
+        <li>ctrl + \ : 현재창 나누기</li>
+        <li>ctrl + pageup/pagedown : 창간 이동</li>
+        </p>
+    
+        <li>선택 후+ ( 자동으로 열고 닫아주기</li>
+        <li>ctrl +- 창 키우거나 줄이기</li>
+        <li>ctrl + / 주석넣기</li>
+        </p><br>
+    </ul> 
+<!-- 댓글 넣어주는 disque사이트 코드 -->
+    <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://juns1999.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </body>
+
+</html>
