@@ -6,11 +6,20 @@
 </head> 
 <!--본문-->
 <body>
+    <style>a{color: rgb(178, 235, 7);} 
+    #active{color: black;} 
+    /* id로 선택자 넣어주고 style에 #넣으면 우선순위 설정됨 
+    id가 유일무이 1등, class가 특별한거 여러개 묶어주고, 태그 사용한게 마지막 순위  */
+    .saw{color:red;}
+    </style>
     <h1><a href="http://blog.naver.com/prologue/PrologueList.nhn?blogId=adobe_kr&skinType&skinId&from=menu&userSelectMenu=true" target="_blank">adobe(클릭)</a></h1>
+    <!-- a태그이기에 마지막우선순위 초록 -->
     <ol type="I">
-        <li><a href="1.html" target="_blank"> illustration(클릭)</a></li>
-        <li><a href="2.html" target="_blank">short key(클릭)</a></li>
-        <li><a href="3.html" target="_blank">pentool(클릭)</a></li>
+        <li><a href="web.html" target="_blank" class="saw" id="active" > illustration(클릭)</a></li>
+        <!-- id라서 가장 우선순위 블랙 -->
+        <li><a href="2.html" target="_blank" class="saw" >short key(클릭)</a></li>
+        <li><a href="3.html" target="_blank" class="saw" >pentool(클릭)</a></li>
+        <!-- class 두개 하나로 묶은 거 빨강 -->
     </ol>
 
     <h2><a href="https://www.adobe.com/" target="_blank" title="adobe wedsite">adobe 가입 및 기본 사용법 익히기(클릭)
