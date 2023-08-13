@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WB8RDJF7QR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WB8RDJF7QR');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web ex</title>
+
 <body>
-    <style></style>
-    <h1>WEB</h1>
-    <ol>
-        <li><a href="ex1.html">HTML</a></li>
-        <li><a href="ex2.html">CSS</a></li>
-        <li><a href="ex3.html">JavaScript</a></li>
-        </ol>
+    <style>
+        a{color: black;text-decoration: none;} 
+        .b{color: blue;} 
+        #c{color: red;}
+        h1{font-size: 45px; text-align: center; border-bottom:1px 
+        solid gray; margin: 0; padding: 20px;}
+        /* 간격 설정 속성
+           padding 콘텐츠와 테두리 사이에 여백을 준다 
+           margin 테두리와 테두리 사이의 간격을 설정 */
+         ol{border-right: 1px solid gray; width: 110px; margin: 0; padding-left: 33px; padding: 20px;}
+         /* 웹페이지 검색해서 ol의 총 픽셀이 150이 넘어버리면 그리드 준걸 넘어버리기에 그리드 언더로.*/
+         /* border 안에서는 ; 한번에 묶어 줘야함 */
+         #ol2{padding: 20px;padding-right: 500px;}
+         /* padding-right 줘서 여백 설정 가능  */
+         body{margin: 0;}
+         #g{display: grid ; grid-template-columns: 150px 1fr;}
+        </style>
+
+    <h1><a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank">WEB</a></h1>
+    <div id="g">
+            <!-- div 따로따로 해서 묶어지지 않나? 
+            <div></div>해서 꼭 닫아줘야는 것이 아닌 <p>처럼 열어놔도 되고,
+            중간에 여러개 넣어놓아도 된다. 닫지는 않았으니 서식이 통한다. -->
+            <ol>
+                <li><a href="ex1.html" target="_blank" class="b">HTML</a></li>
+                <li><a href="ex2.html" target="_blank" class="b" id="c">CSS</a></li>
+                <li><a href="ex3.html" target="_blank">JavaScript</a></li>
+            </ol>
         <!-- 한칸 띄우는 style 구글링  -->
-        <p> Wide Web (WWW), commonly known as the Web,
-            is an information system enabling information to be
-            shared over the Internet through simplified ways meant
-            to appeal to users beyond IT specialists and hobbyists,
-            as well as documents and other web resources to be accessed
-            over the Internet according to specific rules, the Hypertext Transfer Protocol (HTTP).</p>
-        <p> Documents and downloadable media are made available to the
+            <div id="ol2"><h2>WEB</h2>
+            <p> <strong>(WWW), commonly known as the Web,</strong>
+                is an information system enabling information to be
+                shared over the Internet through simplified ways meant
+                to appeal to users beyond IT specialists and hobbyists,
+                as well as documents and other web resources to be accessed
+                over the Internet according to specific rules, the Hypertext Transfer Protocol (HTTP).</p>
+            lass="b" JavaScript/ <p> Documents and downloadable media are made available to the
             network through web servers and can be accessed by programs
             such as web browsers. Servers and resources on the World Wide
             Web are identified and located through character strings called
@@ -34,7 +67,42 @@
             Web applications are web pages that function as application software.
             The information in the Web is transferred across the Internet using
             the Hypertext Transfer Protocol (HTTP).</p>
-        
+        </div>
+        </div>
+         <!-- 댓글 넣어주는 disque사이트 코드 -->
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function () { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://juns1999.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+                Disqus.</a></noscript>
         </body>
-        
-        </html>
+        <!-- 채팅사이트 tawk -->
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true; 
+                s1.src = 'https://embed.tawk.to/64d4e088cc26a871b02e77c4/1h7foq693';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script> <!--End of Tawk.to Script-->
+            </body>
+            </html>
