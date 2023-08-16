@@ -5,23 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
 </head>
-<body>
-    <h>HTML</h>
-    <p><strong>HyperText Markup Language or HTML</strong> is the standard markup language for documents designed to be
-        displayed in a
-        web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as
-        Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
-    
-    Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia
-    web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.</p>
-    
-    HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as
-    interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by
-    denoting structural semantics for text such as headings, paragraphs, lists, links, quotes, and other items. HTML
-    elements are delineated by tags, written using angle brackets. Tags such as and directly introduce
-    content into the page. Other tags such as and surround and provide information about document text and may
-    include sub-element tags. Browsers do not display the HTML tags but use them to interpret the content of the page.</p>
 
-</body>
+<!-- 대체할 부분 -->
+<body>
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+    
+        /* 간격 설정 속성
+               padding 콘텐츠와 테두리 사이에 여백을 준다 
+               margin 테두리와 테두리 사이의 간격을 설정 */
+        #g ol {
+            border-right: 1px solid gray;
+            width: 110px;
+            margin: 0;
+            padding-left: 33px;
+            padding: 20px;
+        }
+    
+        /* 웹페이지 검색해서 ol의 총 픽셀이 150이 넘어버리면 그리드 준걸 넘어버리기에 그리드 언더로.*/
+        /* border 안에서는 ; 한번에 묶어 줘야함 */
+        #g #ol2 {
+            padding: 20px;
+        }
+    
+        /* padding-right 줘서 여백 설정 가능  */
+        body {
+            margin: 0;
+        }
+    
+        #g {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+    
+        @media(max-width:800px) {
+            #g {
+                display: block;
+            }
+    
+            #g ol,
+            h1 {
+                border: none;
+            }
+    
+            /* 그냥 태그 h1, .g #g  선택자 구분 잘하기*/
+        }
+    
+        /* 커다란 부모 grid에 미디어 설정을 걸어줘야함
+            따로 걸어버리면 하나만 없애버리는 꼴 */
+    </style>
+
+    <h1><a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank">WEB</a></h1>
+    <div id="g">
+            <!-- div 따로따로 해서 묶어지지 않나? 
+            <div></div>해서 꼭 닫아줘야는 것이 아닌 <p>처럼 열어놔도 되고,
+            중간에 여러개 넣어놓아도 된다. 닫지는 않았으니 서식이 통한다. -->
+            <ol>
+                <li><a href="ex1.html" target="_blank">HTML</a></li>
+                <li><a href="ex2.html" target="_blank">CSS</a></li>
+                <li><a href="ex3.html" target="_blank">JavaScript</a></li>
+            </ol>
+        <!-- 한칸 띄우는 style 구글링  -->
+            <div id="ol2"><h2>HTML</h2>
+                <p><strong>HyperText Markup Language or HTML</strong> is the standard markup language for documents designed to be
+                    displayed in a
+                    web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as
+                    Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+                
+                Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia
+                web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.</p>
+                
+                HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as
+                interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by
+                denoting structural semantics for text such as headings, paragraphs, lists, links, quotes, and other items. HTML
+                elements are delineated by tags, written using angle brackets. Tags such as and directly introduce
+                content into the page. Other tags such as and surround and provide information about document text and may
+                include sub-element tags. Browsers do not display the HTML tags but use them to interpret the content of the page.</p>
+        </div>
+    </body>
 
 </html>
